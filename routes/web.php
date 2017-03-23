@@ -20,4 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 
-Route::get('admin/users','UserController');
+Route::resource('admin/users','AdminUserController');
