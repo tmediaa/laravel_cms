@@ -78,14 +78,84 @@
             <div class="side-menu-container">
                 <ul class="nav navbar-nav">
 
-                    <li><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
+
 
                     <!-- Dropdown-->
                     <li class="panel panel-default" id="dropdown">
                         <a data-toggle="collapse" href="#dropdown-lvl1">
-                            <span class="glyphicon glyphicon-user"></span> Sub Level <span class="caret"></span>
+                            <span class="glyphicon glyphicon-user"></span>Users<span class="caret"></span>
+                        </a>
+
+                        <!-- Dropdown level 1 -->
+                        <div id="dropdown-lvl1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="users/create">Add user</a></li>
+                                    <li><a href="#">All user</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- Dropdown-->
+                    <li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl2">
+                            <span class="glyphicon glyphicon-user"></span>Posts<span class="caret"></span>
+                        </a>
+
+                        <!-- Dropdown level 1 -->
+                        <div id="dropdown-lvl2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">Add Post</a></li>
+                                    <li><a href="#">All post</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- Dropdown-->
+                    <li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl3">
+                            <span class="glyphicon glyphicon-user"></span>Categories<span class="caret"></span>
+                        </a>
+
+                        <!-- Dropdown level 1 -->
+                        <div id="dropdown-lvl3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">All Categories</a></li>
+                                    <li><a href="#">Create Categories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Dropdown-->
+                    <li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl4">
+                            <span class="glyphicon glyphicon-user"></span>Media<span class="caret"></span>
+                        </a>
+
+                        <!-- Dropdown level 1 -->
+                        <div id="dropdown-lvl4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">All Media</a></li>
+                                    <li><a href="#">Upload Media</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                    {{--<li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl1">
+                            <span class="glyphicon glyphicon-user"></span> Users<span class="caret"></span>
                         </a>
 
                         <!-- Dropdown level 1 -->
@@ -115,7 +185,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </li>
+                    </li>--}}
 
                     <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
 

@@ -13,7 +13,7 @@ class AdminUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class AdminUserRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+        "name" => "required",
+        "email" => "required|unique:users",
+        "role_id" => "required",
+        "is_active" => "required",
+        "password" => "required",
         ];
     }
 }

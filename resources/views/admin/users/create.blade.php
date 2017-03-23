@@ -6,7 +6,7 @@
     <header class="page-header"></header>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            {!! Form::open(['method'=>'post' , 'action'=>'AdminUserController@store']) !!}
+            {!! Form::open(['method'=>'post' , 'action'=>'AdminUserController@store','files'=>true]) !!}
             <div class="form-group">
                 {!! Form::label('name','Name') !!}
                 {!! Form::text('name',null,['class'=>'form-control']) !!}
@@ -32,6 +32,11 @@
                 {!! Form::password('password',['class'=>'form-control']) !!}
             </div>
 
+            <div class="form-group">
+                {!! Form::label('file','Upload Profile Avatar') !!}
+                {!! Form::file('file',['class'=>'form-control']) !!}
+            </div>
+
 
             {!! Form::token() !!}
 
@@ -41,6 +46,14 @@
 
             {!! Form::close() !!}
 
+
+            @if(count($errors) > 0)
+
+                @foreach($errors->all() as $error)
+                    <div class="alert alert-danger" role="alert">{{ $error }}</div>
+                @endforeach
+
+            @endif
         </div>
     </div>
 
