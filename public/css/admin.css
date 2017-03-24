@@ -395,3 +395,13 @@
 .page-header {
     margin: 22px 0 22px;
 }
+
+.profile_photo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 340px;
+}
+
+table tbody td {
+    line-height:80px !important;
+}
