@@ -108,8 +108,8 @@
                         <div id="dropdown-lvl2" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="#">Add Post</a></li>
-                                    <li><a href="#">All post</a></li>
+                                    <li><a href="{{ route('posts.index') }}">All Posts</a></li>
+                                    <li><a href="{{ route('posts.create') }}">Add Posts</a></li>
                                 </ul>
                             </div>
                         </div>
