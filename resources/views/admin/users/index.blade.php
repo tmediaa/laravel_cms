@@ -6,6 +6,11 @@
     <header class="page-header"></header>
 
 
+    @if(Session::get('user_deleted'))
+        <div class="alert alert-danger" role="alert">{{ Session::get('user_deleted') }}</div>
+
+    @endif
+
     @if(count($users))
     <table class="table">
         <thead>
@@ -24,8 +29,8 @@
             @foreach($users as $user)
                 <tr>
                     <td>{{ $user->id }}</td>
-                    <td><span class="profile_photo"><img src='/images/{{ $user->photo->file }}'" alt=""/></span></td>
-                    <td>{{ $user->name }}</td>
+                    <td><a href="{{ route('users.edit',$user->id) }}"><span class="profile_photo"><img src="{{$user->photo  ? $user->photo->file : 'http://placehold.it/80/80' }}" alt=""/></span></a></td>
+                    <td><a href="{{ route('users.edit',$user->id) }}">{{ $user->name }}</a></td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->role->name }}</td>
                     <td>{{ $user->is_active == 1 ? 'Active' : 'Not Active' }}</td>

@@ -90,8 +90,8 @@
                         <div id="dropdown-lvl1" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="users/create">Add user</a></li>
-                                    <li><a href="#">All user</a></li>
+                                    <li><a href="{{ route('users.index') }}">All user</a></li>
+                                    <li><a href="{{ route('users.create') }}">Add user</a></li>
                                 </ul>
                             </div>
                         </div>

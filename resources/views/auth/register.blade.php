@@ -38,6 +38,8 @@
                             </div>
                         </div>
 
+
+
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
@@ -59,6 +61,10 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+
+                        <input type="hidden" name="role_id" value="1" />
+                        <input type="hidden" name="is_active" value="1" />
+                        <input type="hidden" name="photo_id" value="1" />
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
